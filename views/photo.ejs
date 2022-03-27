@@ -1,6 +1,13 @@
 <%- include('partials/_header') -%>
 
 <body>
+	<div class="backpop">
+		<div class="con">
+			<h1>Are you sure?</h1>
+			<a id="okHref" href="/photos/<%= photo._id %>?_method=DELETE"><button id="okBtn">OK</button></a>
+			<a id="cancelBtn" onclick="closePopup()"><button style="width: 90px;">Cancel</button></a>
+		</div>
+	</div>
 	<div class="tm-page-wrap mx-auto">
 		<div class="position-relative">
 			
@@ -40,7 +47,9 @@
 									<a href="/photos/edit/<%= photo._id %>" class="btn btn-primary p-0 mb-4 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>	
 								</div>	
 								<div class="text-center">
-									<button class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download"><span>Delete Photo</span></button>	
+									<a onclick="conFun()" style="color: white;" id="confirm" class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download">
+										<span>Delete Photo</span>
+									</a>	
 								</div>								
 							</div>
 						</div>
@@ -48,6 +57,9 @@
 				</main>
 
 				<%- include('partials/_footer') -%>
+
+				<script src="../js/confirm.js"></script>
     
 </body>
 </html>
+

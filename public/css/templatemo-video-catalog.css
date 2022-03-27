@@ -526,3 +526,39 @@ video {
         flex-direction: column;
     }
 }
+
+.backpop{
+    position: absolute;
+    width: 100vw;
+    height: 2160px;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 2000;
+    visibility: hidden;
+}
+
+.con{
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 2001;
+    top: 30%;
+    left: 37%;
+}
+
+.con h1{
+    text-indent: 20px;
+    line-height: 100px;
+}
+
+.con #okHref{
+    margin-left: 100px;
+}
+
+.con #okBtn{
+    width: 80px;
+    margin-right: 15px;
+}
+
