@@ -544,8 +544,9 @@ video {
     background-color: white;
     border-radius: 5px;
     z-index: 2001;
-    top: 30%;
+    top: 48%;
     left: 37%;
+    visibility: hidden;
 }
 
 .con h1{
@@ -555,10 +556,13 @@ video {
 
 .con #okHref{
     margin-left: 100px;
+    margin-right: 20px;
 }
 
 .con #okBtn{
     width: 80px;
-    margin-right: 15px;
 }
 
+.con button{
+    border-radius: 10px;
+}
