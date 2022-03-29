@@ -547,6 +547,7 @@ video {
     top: 48%;
     left: 37%;
     visibility: hidden;
+    border: 1px solid rgb(106, 189, 106);
 }
 
 .con h1{
